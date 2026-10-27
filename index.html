@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FSKTM IT Club</title>
+    <style>
+ /* ===== 1. Page reset ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #f4f7fa;
+    color: #3a4a5c;
+    line-height: 1.7;
+    padding: 0 24px 24px;
+}
+
+/* ===== 2. Main container ===== */
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 600px;
+}
+
+/* ===== 3. Major regions ===== */
+.logo {
+    min-height: 100px;
+    margin-top: 10px;
+    background-color: #14284b;
+    background-image: url("header.jpg");
+    background-size: cover;
+    background-position: right center;
+    color: #ffffff;
+    padding: 20px 30px 20px 50px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo h1 {
+    font-size: 32px;
+    letter-spacing: 0.5px;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+.logo p {
+    font-size: 15px;
+    color: #9fe7ea;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+.navigation {
+    min-height: 50px;
+    margin-top: 10px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(20, 40, 75, 0.08);
+    padding: 0 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+
+.navigation a {
+    color: #14284b;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 6px 14px;
+    border-radius: 20px;
+    transition: 0.2s;
+}
+
+.navigation a:hover {
+    background-color: #1aa6b0;
+    color: #ffffff;
+}
+
+.content {
+    min-height: 400px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer {
+    min-height: 20px;
+    margin-top: 10px;
+    background-color: #14284b;
+    color: #c9d6e3;
+    font-size: 13px;
+    text-align: center;
+    padding: 14px 20px;
+    border-radius: 12px;
+}
+
+/* ===== 4. Two content columns ===== */
+.side-bar {
+    width: 20%;
+    min-height: 400px;
+    background-color: #e6f6f7;
+    border-left: 5px solid #1aa6b0;
+    padding: 22px 20px;
+    border-radius: 12px;
+}
+
+.side-bar h3 {
+    color: #14284b;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.side-bar ul {
+    list-style: none;
+    margin-bottom: 24px;
+}
+
+.side-bar li {
+    margin-bottom: 8px;
+}
+
+.side-bar a {
+    color: #14284b;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    display: block;
+    padding: 8px 12px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+
+.side-bar a:hover {
+    background-color: #1aa6b0;
+    color: #ffffff;
+}
+
+.side-bar p {
+    font-size: 14px;
+}
+
+.body-area {
+    width: 70%;
+    min-height: 400px;
+    background-color: #ffffff;
+    padding: 30px 36px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(20, 40, 75, 0.08);
+}
+
+.body-area section {
+    padding-bottom: 22px;
+    margin-bottom: 22px;
+    border-bottom: 1px solid #e6ecf1;
+}
+
+.body-area section:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.body-area h2 {
+    color: #14284b;
+    font-size: 22px;
+    margin-bottom: 8px;
+    padding-left: 12px;
+    border-left: 4px solid #1aa6b0;
+}
+
+.body-area p {
+    font-size: 15px;
+}
+
+.body-area ul {
+    padding-left: 20px;
+}
+
+.body-area li {
+    margin-bottom: 6px;
+}
+
+.body-area li::marker {
+    color: #1aa6b0;
+}
+
+.body-area strong {
+    color: #14284b;
+}
+
+/* ===== 5. Responsive: tablet & phone ===== */
+@media (max-width: 768px) {
+
+    body {
+        padding: 0 10px 10px;
+    }
+
+    .logo {
+        padding: 15px 20px 15px 35px;
+    }
+
+    .logo h1 {
+        font-size: 24px;
+    }
+
+    .navigation {
+        flex-wrap: wrap;
+        padding: 8px 12px;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .side-bar,
+    .body-area {
+        width: 100%;
+        min-height: auto;
+    }
+
+    .body-area {
+        margin-top: 10px;
+        padding: 22px;
+    }
+}
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+    <!-- LOGO / HEADER -->
+    <div class="logo">
+        <h1>FSKTM IT Club</h1>
+        <p>Code. Create. Connect.</p>
+    </div>
+
+    <!-- NAVIGATION -->
+    <div class="navigation">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#events">Events</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <!-- CONTENT -->
+    <div class="content">
+
+        <!-- SIDE-BAR -->
+        <div class="side-bar">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#events">Upcoming Events</a></li>
+                <li><a href="https://www.w3schools.com" target="_blank">Learning Resources</a></li>
+                <li><a href="#contact">Join the Club</a></li>
+            </ul>
+
+            <h3>Weekly Meet-up</h3>
+            <p>Every Thursday, 8:30 PM<br>Makmal FSKTM, Block G</p>
+        </div>
+
+        <!-- BODY AREA -->
+        <div class="body-area">
+
+            <section id="home">
+                <h2>Welcome to FSKTM IT Club</h2>
+                <p>We are a student community at UTHM for anyone who loves technology. Whether you are into coding, design or networking, there is a place for you here.</p>
+            </section>
+
+            <section id="about">
+                <h2>About Us</h2>
+                <p>Our goal is to help members learn by doing. We run hands-on workshops, small team projects and sharing sessions with seniors. No experience needed, just bring your laptop and curiosity.</p>
+            </section>
+
+            <section id="events">
+                <h2>Upcoming Events</h2>
+                <ul>
+                    <li><strong>Intro to Git & GitHub:</strong> Learn version control from zero.</li>
+                    <li><strong>Mini Hackathon:</strong> Build a simple web app in 6 hours.</li>
+                    <li><strong>Alumni Talk:</strong> Life as a software engineer in industry.</li>
+                </ul>
+            </section>
+
+            <section id="contact">
+                <h2>Contact Us</h2>
+                <p>Email: fsktmitclub@uthm.edu.my<br>Instagram: @fsktmitclub</p>
+            </section>
+
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+        <p>&copy; 2026 FSKTM IT Club, UTHM. All rights reserved.</p>
+    </div>
+
+</div>
+
+</body>
+</html>
